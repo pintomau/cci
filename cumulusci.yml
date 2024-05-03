@@ -1,0 +1,24 @@
+minimum_cumulusci_version: '3.86.0'
+project:
+    name: cci_project
+    package:
+        name: cci_project
+        api_version: '60.0'
+    git:
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/cci_project/tests
+            options:
+                outputdir: robot/cci_project/results
+
+    robot_testdoc:
+        options:
+            path: robot/cci_project/tests
+            output: robot/cci_project/doc/cci_project_tests.html
+
+    run_tests:
+        options:
+            required_org_code_coverage_percent: 75
