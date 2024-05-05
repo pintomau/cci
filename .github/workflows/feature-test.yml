@@ -9,4 +9,5 @@ jobs:
         name: Feature test
         uses: cumulus-actions/standard-workflows/.github/workflows/feature-2gp.yml@main
         secrets:
+            cumulusci-version: "3.86.0"
             dev-hub-auth-url: ${{ secrets.SFDX_AUTH_URL }}
