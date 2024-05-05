@@ -6,13 +6,20 @@ set -eu
 
 main() {
 
-    # sync local env with Pipfile.lock
-    # requires pipenv
+    echo "initiate pipenv environment and dependencies"    
     pipenv sync
+    echo
 
-    # install cf shell globally
-    # requires npm
+    echo "copy chromedriver to pipenv path"
+    chrome_path="$($(pipenv --venv)/Scripts/chromedriver-path)"
+    cp "$chrome_path/chromedriver" "$(pipenv --venv)/Scripts"
+    echo
+
+    echo "install @salesforce/cli globally"
     npm i -g @salesforce/cli
+    echo
+
+    echo "You can now run \`pipenv shell\` to have access to all dependencies"
 
 }
 

@@ -1,8 +1,0 @@
-{
-  "devDependencies": {
-    "chromedriver": "^124.0.1"
-  },
-  "dependencies": {
-    "@salesforce/cli": "^2.39.6"
-  }
-}
