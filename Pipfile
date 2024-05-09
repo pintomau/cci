@@ -4,8 +4,8 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-cumulusci = "==3.86.0"
-chromedriver-binary = "*"
+cumulusci = "==3.86.1"
+chromedriver-binary = "==124.0.6367.155.0"
 
 [dev-packages]
 
