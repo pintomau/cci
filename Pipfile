@@ -12,5 +12,3 @@ chromedriver-binary = "==124.0.6367.155.0"
 [requires]
 python_version = "3.11"
 
-[scripts]
-preinstall="bash ./setup.sh"
