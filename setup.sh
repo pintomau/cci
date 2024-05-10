@@ -11,7 +11,7 @@ main() {
     echo
 
     echo "copy chromedriver to pipenv path"
-    chrome_path="$($(pipenv --venv)/Scripts/chromedriver-path)"
+    chrome_path="$(pipenv run chromedriver-path)"
     cp "$chrome_path/chromedriver" "$(pipenv --venv)/Scripts"
     echo
 
